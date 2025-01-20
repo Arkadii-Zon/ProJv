@@ -30,11 +30,9 @@ public class FibonacciSequence {
         int[] fibSequence = new int[lenth];
         fibSequence[0] = 0;
         fibSequence[1] = 1;
-        int index = 2;
+
         for (int i = 2; i < lenth; i++) {
             fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
-            fibSequence[index] = fibSequence[i];
-            index++;
             if (lenth < 0){
                 return null;
             }

@@ -25,6 +25,8 @@ public class FibonacciSequence {
 
     public int [] generateByFor(){
 
+        if (lenth == 0) return new int[0];
+        if (lenth == 1) return new int[]{0};
         int[] fibSequence = new int[lenth];
         fibSequence[0] = 0;
         fibSequence[1] = 1;
@@ -42,6 +44,9 @@ public class FibonacciSequence {
     }
 
     public int[] generateByWhile(){
+
+        if (lenth == 0) return new int[0];
+        if (lenth == 1) return new int[]{0};
         int[] fibSequence = new int[lenth];
         fibSequence[0] = 0;
         fibSequence[1] = 1;
@@ -56,6 +61,9 @@ public class FibonacciSequence {
     }
 
     public int[] generateByDoWhile(){
+
+        if (lenth == 0) return new int[0];
+        if (lenth == 1) return new int[]{0};
         int[] fibSequence = new int[lenth];
         fibSequence[0] = 0;
         fibSequence[1] = 1;

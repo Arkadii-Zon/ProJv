@@ -1,4 +1,4 @@
-package org.asd.Lection2;
+package org.asd.Lection2.TaskAlgor;
 
 
 /** Написать класс FibonacciSequence, в котором есть поле length - длинна последовательности Фибоначчи.
@@ -16,10 +16,14 @@ public class FibonacciSequence {
     }
 
     public void setLenth(int lenth) {
+
         this.lenth = lenth;
     }
 
-    public  FibonacciSequence (int lenth){
+    public  FibonacciSequence (int lenth) throws IllegalAccessException {
+        if (lenth <= 0){
+            throw new IllegalAccessException("ошибка");
+        }
         this.lenth = lenth;
     }
 
@@ -33,9 +37,6 @@ public class FibonacciSequence {
 
         for (int i = 2; i < lenth; i++) {
             fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
-            if (lenth < 0){
-                return null;
-            }
         }
 
         return fibSequence;
